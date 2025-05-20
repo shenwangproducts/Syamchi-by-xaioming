@@ -1,72 +1,72 @@
-/* style.css - สำหรับเว็บสยามชัย */
+/* style.css - สไตล์หลักของเว็บไซต์สยามชัย */
 
-/* ตั้งค่าพื้นฐานของ body และ font */
-body {
+/* รีเซ็ตเบื้องต้น */
+* {
   margin: 0;
-  font-family: 'Sarabun', sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-/* คอนเทนเนอร์ทั่วไป */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* ส่วนหัว */
 header {
-  background-color: #d32f2f; /* แดงเข้ม */
-  color: white;
+  background-color: #c60000; /* สีแดงเข้ม */
+  color: #fff;
+  padding: 1rem 2rem;
   text-align: center;
-  padding: 40px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* เมนูนำทาง */
+header h1 {
+  font-size: 2rem;
+}
+
 nav {
-  background-color: #b71c1c;
-}
-nav ul {
-  list-style: none;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
   display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 10px 0;
+  justify-content: center;
+  gap: 1.5rem;
+  border-bottom: 2px solid #c60000;
 }
-nav ul li a {
-  color: white;
+
+nav a {
+  color: #c60000;
   text-decoration: none;
   font-weight: bold;
-}
-nav ul li a:hover {
-  text-decoration: underline;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background 0.2s ease;
 }
 
-/* ปุ่มแอดไลน์ */
-.btn-line {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #25d366;
-  color: white;
-  text-decoration: none;
+nav a:hover {
+  background-color: #ffe5e5;
+}
+
+/* ส่วนแนะนำสินค้า */
+main {
+  padding: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-left: 6px solid #c60000;
+  padding-left: 1rem;
+  background-color: #f9f9f9;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
-  margin-top: 10px;
-}
-
-/* ส่วนโปรโมชั่น */
-.promo {
-  background-color: #fff3f3;
-  text-align: center;
-  padding: 30px 10px;
-}
-.promo .btn-line {
-  font-size: 1.1rem;
-}
-
-/* โซนสินค้า */
-.product-section {
-  padding: 30px 0;
-  border-bottom: 1px solid #eee;
+  }
   
