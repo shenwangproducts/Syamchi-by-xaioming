@@ -1,145 +1,169 @@
-<!DOCTYPE html><html lang="th">
+<!DOCTYPE html>
+<html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>สยามชัย - ร้านขายเครื่องใช้ไฟฟ้า</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สยามชัย เครื่องใช้ไฟฟ้า</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
-      background-color: #ffffff;
-      color: #222;
+      font-family: 'Sarabun', sans-serif;
+      background-color: #fff;
+      color: #333;
     }
     header {
       background-color: #d32f2f;
       color: white;
       padding: 1rem;
       text-align: center;
-      font-size: 1.5rem;
     }
     nav {
-      background-color: #b71c1c;
-      padding: 0.5rem;
-      text-align: center;
+      background-color: #f44336;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    section {
       padding: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .section-title {
-      font-size: 1.3rem;
+    nav a:hover {
+      background-color: #b71c1c;
+    }
+    .hero {
+      text-align: center;
+      background: #ffebee;
+      padding: 2rem;
+    }
+    .hero h1 {
+      color: #d32f2f;
       margin-bottom: 0.5rem;
+    }
+    .hero button {
+      padding: 0.7rem 1.5rem;
+      background-color: #d32f2f;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .section h2 {
       color: #d32f2f;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 1rem;
+      margin-top: 1rem;
     }
     .product {
       border: 1px solid #ccc;
-      border-radius: 8px;
       padding: 1rem;
       text-align: center;
     }
     .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
     }
     .product button {
-      background-color: #d32f2f;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
       margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #388e3c;
+      border: none;
+      color: white;
+      cursor: pointer;
     }
     footer {
-      background-color: #f5f5f5;
-      text-align: center;
+      background: #eee;
       padding: 1rem;
-      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>สยามชัย - ศูนย์รวมเครื่องใช้ไฟฟ้า</header>
+  <header>
+    <h1>สยามชัย เครื่องใช้ไฟฟ้า</h1>
+    <p>ร้านของคุณ ความไว้วางใจของลูกค้า</p>
+  </header>
   <nav>
     <a href="#tv">ทีวี</a>
     <a href="#fridge">ตู้เย็น</a>
     <a href="#washer">เครื่องซักผ้า</a>
     <a href="#air">แอร์</a>
-    <a href="#howto">วิธีการใช้งาน</a>
-  </nav>  <section>
-    <div class="section-title">แนะนำสินค้าประจำเดือน</div>
+    <a href="#guide">วิธีใช้งาน</a>
+  </nav>
+
+  <div class="hero">
+    <h1>โปรโมชั่นเด็ดประจำเดือน!</h1>
+    <p>ลดราคาสุดแรง ของแถมเพียบ แอดไลน์ด่วน!</p>
+    <button onclick="window.location.href='https://line.me/YOUR_LINE_LINK'">แอดไลน์เลย</button>
+  </div>
+
+  <div class="section" id="tv">
+    <h2>ทีวีแนะนำ</h2>
     <div class="products">
       <div class="product">
-        <img src="https://via.placeholder.com/300x200?text=ทีวี+LED" alt="ทีวี LED" />
-        <h3>ทีวี LED 55"</h3>
-        <p>ภาพคมชัดระดับ 4K รองรับ Smart TV</p>
-        <button onclick="order('ทีวี LED 55\"')">สั่งซื้อ</button>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200?text=ตู้เย็น" alt="ตู้เย็น" />
-        <h3>ตู้เย็น 2 ประตู</h3>
-        <p>ระบบประหยัดพลังงาน อินเวอร์เตอร์</p>
-        <button onclick="order('ตู้เย็น 2 ประตู')">สั่งซื้อ</button>
-      </div>
-    </div>
-  </section>  <section id="tv">
-    <div class="section-title">หมวดหมู่: ทีวี</div>
-    <div class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/300x200?text=ทีวี+Smart" alt="ทีวี Smart" />
-        <h3>ทีวี Smart 50"</h3>
-        <p>รองรับ YouTube/Netflix มี Wi-Fi ในตัว</p>
-        <button onclick="order('ทีวี Smart 50\"')">สั่งซื้อ</button>
+        <img src="https://via.placeholder.com/300x150?text=TV+32+inch" alt="ทีวี 32 นิ้ว">
+        <h3>ทีวี 32 นิ้ว Smart TV</h3>
+        <p>พิเศษ 4,990 บาท</p>
+        <button onclick="window.location.href='https://line.me/YOUR_LINE_LINK'">แอดไลน์เพื่อสั่งซื้อ</button>
       </div>
     </div>
-  </section>  <section id="fridge">
-    <div class="section-title">หมวดหมู่: ตู้เย็น</div>
+  </div>
+
+  <div class="section" id="fridge">
+    <h2>ตู้เย็นแนะนำ</h2>
     <div class="products">
       <div class="product">
-        <img src="https://via.placeholder.com/300x200?text=ตู้เย็น+2+ประตู" alt="ตู้เย็น 2 ประตู" />
-        <h3>ตู้เย็น 2 ประตูขนาดกลาง</h3>
-        <p>แช่เย็นเร็ว ปรับอุณหภูมิได้หลายระดับ</p>
-        <button onclick="order('ตู้เย็น 2 ประตูขนาดกลาง')">สั่งซื้อ</button>
+        <img src="https://via.placeholder.com/300x150?text=Fridge+2+Doors" alt="ตู้เย็น 2 ประตู">
+        <h3>ตู้เย็น 2 ประตู 7.4 คิว</h3>
+        <p>พิเศษ 6,490 บาท</p>
+        <button onclick="window.location.href='https://line.me/YOUR_LINE_LINK'">แอดไลน์เพื่อสั่งซื้อ</button>
       </div>
     </div>
-  </section>  <section id="washer">
-    <div class="section-title">หมวดหมู่: เครื่องซักผ้า</div>
+  </div>
+
+  <div class="section" id="washer">
+    <h2>เครื่องซักผ้าแนะนำ</h2>
     <div class="products">
       <div class="product">
-        <img src="https://via.placeholder.com/300x200?text=เครื่องซักผ้า" alt="เครื่องซักผ้า" />
-        <h3>เครื่องซักผ้าฝาบน 10 กก.</h3>
-        <p>ถังซักแข็งแรง หมุนเร็วซักสะอาด</p>
-        <button onclick="order('เครื่องซักผ้าฝาบน 10 กก.')">สั่งซื้อ</button>
+        <img src="https://via.placeholder.com/300x150?text=Washer+9kg" alt="เครื่องซักผ้า 9kg">
+        <h3>เครื่องซักผ้า 9 กก.</h3>
+        <p>พิเศษ 5,990 บาท</p>
+        <button onclick="window.location.href='https://line.me/YOUR_LINE_LINK'">แอดไลน์เพื่อสั่งซื้อ</button>
       </div>
     </div>
-  </section>  <section id="air">
-    <div class="section-title">หมวดหมู่: เครื่องปรับอากาศ</div>
+  </div>
+
+  <div class="section" id="air">
+    <h2>แอร์แนะนำ</h2>
     <div class="products">
       <div class="product">
-        <img src="https://via.placeholder.com/300x200?text=แอร์" alt="แอร์" />
+        <img src="https://via.placeholder.com/300x150?text=Air+12000btu" alt="แอร์ 12000 BTU">
         <h3>แอร์ 12000 BTU</h3>
-        <p>เย็นเร็ว เงียบ ประหยัดไฟเบอร์ 5</p>
-        <button onclick="order('แอร์ 12000 BTU')">สั่งซื้อ</button>
+        <p>พิเศษ 8,990 บาท</p>
+        <button onclick="window.location.href='https://line.me/YOUR_LINE_LINK'">แอดไลน์เพื่อสั่งซื้อ</button>
       </div>
     </div>
-  </section>  <section id="howto">
-    <div class="section-title">วิธีการใช้งาน</div>
-    <p>กรุณาเลือกสินค้าที่ต้องการแล้วกดปุ่ม "สั่งซื้อ" ระบบจะแสดงข้อความให้คุณติดต่อผ่าน LINE หรือช่องทางที่คุณตั้งไว้</p>
-  </section>  <footer>
-    ติดต่อ: 08x-xxx-xxxx | Facebook: สยามชัย | LINE: @siamchai
-  </footer>  <script>
-    function order(product) {
-      alert('คุณเลือกสั่งซื้อ: ' + product + '\nโปรดติดต่อทาง LINE เพื่อดำเนินการต่อ');
-    }
-  </script></body>
-</html>
+  </div>
+
+  <div class="section" id="guide">
+    <h2>วิธีการใช้งาน / คำแนะนำลูกค้า</h2>
+    <p>ติดต่อเราทางไลน์เพื่อสอบถามการใช้งาน ติดตั้ง และบริการหลังการขาย</p>
+    <button onclick="window.location.href='https://line.me/YOUR_LINE_LINK'">แอดไลน์เพื่อสอบถาม</button>
+  </div>
+
+  <footer>
+    &copy; 2025 สยามชัย เครื่องใช้ไฟฟ้า | ติดต่อ: Line ID: @siamchai
+  </footer>
+</body>
+  </html>
+      
