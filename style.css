@@ -1,26 +1,140 @@
 /* style.css - สำหรับเว็บสยามชัย */
 
-/* ตั้งค่าพื้นฐานของ body และ font */ body { margin: 0; font-family: 'Sarabun', sans-serif; background-color: #ffffff; color: #333; }
+/* ตั้งค่าพื้นฐานของ body และ font */
+body {
+  margin: 0;
+  font-family: 'Sarabun', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
 
-/* คอนเทนเนอร์ทั่วไป */ .container { width: 90%; max-width: 1200px; margin: auto; padding: 20px 0; }
+/* คอนเทนเนอร์ทั่วไป */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
 
-/* ส่วนหัว / header { background-color: #d32f2f; / แดงเข้ม */ color: white; text-align: center; padding: 40px 20px; }
+/* ส่วนหัว */
+header {
+  background-color: #d32f2f; /* แดงเข้ม */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-/* เมนูนำทาง */ nav { background-color: #b71c1c; } nav ul { list-style: none; display: flex; justify-content: space-around; margin: 0; padding: 10px 0; } nav ul li a { color: white; text-decoration: none; font-weight: bold; } nav ul li a:hover { text-decoration: underline; }
+/* เมนูนำทาง */
+nav {
+  background-color: #b71c1c;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
 
-/* ปุ่มแอดไลน์ */ .btn-line { display: inline-block; padding: 10px 20px; background-color: #25d366; color: white; text-decoration: none; border-radius: 8px; margin-top: 10px; }
+/* ปุ่มแอดไลน์ */
+.btn-line {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
 
-/* ส่วนโปรโมชั่น */ .promo { background-color: #fff3f3; text-align: center; padding: 30px 10px; } .promo .btn-line { font-size: 1.1rem; }
+/* ส่วนโปรโมชั่น */
+.promo {
+  background-color: #fff3f3;
+  text-align: center;
+  padding: 30px 10px;
+}
+.promo .btn-line {
+  font-size: 1.1rem;
+}
 
-/* โซนสินค้า */ .product-section { padding: 30px 0; border-bottom: 1px solid #eee; } .product-section h2 { color: #d32f2f; margin-bottom: 20px; }
+/* โซนสินค้า */
+.product-section {
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+.product-section h2 {
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
 
-.product-row { display: flex; overflow-x: auto; gap: 15px; padding-bottom: 10px; } .product-card { flex: 0 0 auto; width: 220px; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background-color: #fafafa; text-align: center; } .product-card img { width: 100%; height: auto; border-radius: 4px; } .product-card h3 { font-size: 1.1rem; margin: 10px 0 5px; } .btn-detail, .btn-more { display: inline-block; margin-top: 5px; padding: 5px 10px; background-color: #d32f2f; color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; }
+.product-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+.product-card {
+  flex: 0 0 auto;
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fafafa;
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+.btn-detail, .btn-more {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #d32f2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
 
-/* วิธีใช้งาน */ .howto { background-color: #f5f5f5; padding: 30px 0; text-align: center; }
+/* วิธีใช้งาน */
+.howto {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+  text-align: center;
+}
 
-/* ส่วนท้าย */ footer { background-color: #212121; color: white; text-align: center; padding: 15px 0; font-size: 0.9rem; }
+/* ส่วนท้าย */
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
 
-/* Responsive เบื้องต้น */ @media (max-width: 768px) { nav ul { flex-direction: column; align-items: center; }
+/* Responsive เบื้องต้น */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.product-row { flex-direction: column; align-items: center; } }
-
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  }
