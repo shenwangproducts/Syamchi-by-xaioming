@@ -8,11 +8,22 @@
 </head>
 <body>
 
-  <!-- แจ้งเตือน -->
-  <div class="notification" id="notification">
-    <p>สิ่งที่ลูกค้าต้องเตรียมคือไลน์เพื่อสั่งซื้อโดยตรงกับพนักงานขาย กรุณาพูดแนะนำตัวก่อนตามปกติ</p>
-    <button onclick="closeNotification()">ปิด</button>
+  <!-- ป๊อปอัปแจ้งเตือน -->
+  <div class="popup" id="notification">
+    <div class="popup-content">
+      <p>สิ่งที่ลูกค้าต้องเตรียมคือไลน์เพื่อสั่งซื้อโดยตรงกับพนักงานขาย กรุณาพูดแนะนำตัวก่อนตามปกติ</p>
+      <button onclick="closeNotification()">ปิด</button>
+    </div>
   </div>
+
+  <!-- เมนูบาร์ -->
+  <nav class="menu-bar">
+    <ul>
+      <li><a href="#">หน้าแรก</a></li>
+      <li><a href="#how-to">วิธีใช้งาน</a></li>
+      <li><a href="#products">สินค้า</a></li>
+    </ul>
+  </nav>
 
   <!-- หัวเว็บไซต์ -->
   <header class="site-header">
@@ -20,138 +31,155 @@
     <p class="slogan">ผ่อนง่ายราคาสบาย นานสุด 12 เดือน เพียงแค่บัตรประชาชนใบเดียว บางสินค้าเช่นแอร์อาจใช้ทะเบียนบ้าน</p>
   </header>
 
-  <!-- โซนสินค้า -->
-  <main class="products">
-    
-<section class="product-section">
-  <h2>แอร์</h2>
-  <div class="product-grid">
-    <div class="product-box">
-      <img src="img/fridge1.jpg" alt="1">
-      <h3></h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge2.jpg" alt=" 2">
-      <h3></h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge3.jpg" alt=" 3">
-      <h3>ชื่อ</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge4.jpg" alt="4">
-      <h3>ชื่อ</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-  </div>
-</section
-
-    <!-- หมวดอื่น ๆ ก็ใช้โครงสร้างเดียวกัน -->
-    
-    <!-- เพิ่มตู้เย็น และเครื่องซักผ้าแบบเดียวกัน -->
-    <!-- โซนตู้เย็น -->
-<section class="product-section">
-  <h2>ทีวี</h2>
-  <div class="product-grid">
-    <div class="product-box">
-      <img src="img/fridge1.jpg" alt="1">
-      <h3></h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge2.jpg" alt=" 2">
-      <h3></h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge3.jpg" alt=" 3">
-      <h3>ชื่อ</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge4.jpg" alt="4">
-      <h3>ชื่อ</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-  </div>
-</section>
-    
-    <!-- เพิ่มตู้เย็น และเครื่องซักผ้าแบบเดียวกัน -->
-    <!-- โซนตู้เย็น -->
-<section class="product-section">
-  <h2>ตู้เย็น</h2>
-  <div class="product-grid">
-    <div class="product-box">
-      <img src="img/fridge1.jpg" alt="ตู้เย็น 1">
-      <h3>ตู้เย็น Toshiba</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge2.jpg" alt="ตู้เย็น 2">
-      <h3>ตู้เย็น LG</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge3.jpg" alt="ตู้เย็น 3">
-      <h3>ตู้เย็น Samsung</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/fridge4.jpg" alt="ตู้เย็น 4">
-      <h3>ตู้เย็น Haier</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-  </div>
-</section>
-
-<!-- โซนเครื่องซักผ้า -->
-<section class="product-section">
-  <h2>เครื่องซักผ้า</h2>
-  <div class="product-grid">
-    <div class="product-box">
-      <img src="img/wash1.jpg" alt="เครื่องซักผ้า 1">
-      <h3>เครื่องซักผ้า Samsung</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/wash2.jpg" alt="เครื่องซักผ้า 2">
-      <h3>เครื่องซักผ้า LG</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/wash3.jpg" alt="เครื่องซักผ้า 3">
-      <h3>เครื่องซักผ้า Panasonic</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-    <div class="product-box">
-      <img src="img/wash4.jpg" alt="เครื่องซักผ้า 4">
-      <h3>เครื่องซักผ้า Toshiba</h3>
-      <p>สาขาปทุมธานี 2</p>
-      <button>อ่านเพิ่มเติม</button>
-    </div>
-  </div>
+  <!-- วิธีใช้งาน -->
+  <section id="how-to">
+    <h2>วิธีใช้งานเว็บไซต์</h2>
+    <p>เลือกหมวดสินค้าที่ต้องการ > กดปุ่ม "อ่านเพิ่มเติม" เพื่อดูรายละเอียดและติดต่อพนักงาน</p>
   </section>
+
+  <!-- โซนสินค้า -->
+  <main id="products">
+
+    <!-- แอร์ -->
+    <section class="product-section">
+      <h2>แอร์</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="img/air1.jpg" alt="1">
+          <h3>แอร์ Samsung 9000BTU</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/air2.jpg" alt="2">
+          <h3>แอร์ LG 12000BTU</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/air3.jpg" alt="3">
+          <h3>แอร์ Daikin 18000BTU</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/air4.jpg" alt="4">
+          <h3>แอร์ Mitsubishi 15000BTU</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ทีวี -->
+    <section class="product-section">
+      <h2>ทีวี</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="img/tv1.jpg" alt="1">
+          <h3>ทีวี Samsung 43 นิ้ว</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/tv2.jpg" alt="2">
+          <h3>ทีวี LG 50 นิ้ว</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/tv3.jpg" alt="3">
+          <h3>ทีวี Sony 55 นิ้ว</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/tv4.jpg" alt="4">
+          <h3>ทีวี TCL 32 นิ้ว</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ตู้เย็น -->
+    <section class="product-section">
+      <h2>ตู้เย็น</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="img/fridge1.jpg" alt="ตู้เย็น 1">
+          <h3>ตู้เย็น Toshiba</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/fridge2.jpg" alt="ตู้เย็น 2">
+          <h3>ตู้เย็น LG</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/fridge3.jpg" alt="ตู้เย็น 3">
+          <h3>ตู้เย็น Samsung</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/fridge4.jpg" alt="ตู้เย็น 4">
+          <h3>ตู้เย็น Haier</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- เครื่องซักผ้า -->
+    <section class="product-section">
+      <h2>เครื่องซักผ้า</h2>
+      <div class="product-grid">
+        <div class="product-box">
+          <img src="img/wash1.jpg" alt="เครื่องซักผ้า 1">
+          <h3>เครื่องซักผ้า Samsung</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/wash2.jpg" alt="เครื่องซักผ้า 2">
+          <h3>เครื่องซักผ้า LG</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/wash3.jpg" alt="เครื่องซักผ้า 3">
+          <h3>เครื่องซักผ้า Panasonic</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+        <div class="product-box">
+          <img src="img/wash4.jpg" alt="เครื่องซักผ้า 4">
+          <h3>เครื่องซักผ้า Toshiba</h3>
+          <p>สาขาปทุมธานี 2</p>
+          <button>อ่านเพิ่มเติม</button>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <!-- ส่วนท้ายเว็บไซต์ -->
+  <footer>
+    <h2>สนับสนุนโดย</h2>
+    <div class="sponsors">
+      <img src="img/logo_samsung.png" alt="Samsung">
+      <img src="img/logo_lg.png" alt="LG">
+      <img src="img/logo_toshiba.png" alt="Toshiba">
+      <img src="img/logo_panasonic.png" alt="Panasonic">
+      <img src="img/logo_sony.png" alt="Sony">
+    </div>
+    <p>&copy; 2025 สยามชัย ปทุมธานี2 บายน้องหมิง</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
-</html>
+  </html>
+  
