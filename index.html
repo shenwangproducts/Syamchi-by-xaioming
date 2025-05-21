@@ -1,283 +1,57 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>สยามชัย</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สยามชัย ปทุมธานี2 บายน้องหมิง</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ส่วนหัว -->
-  <header>
-    <h1>สยามชัย</h1>
-    <p>ร้านขายอุปกรณ์ไฟฟ้า ทีวี แอร์ ตู้เย็น เครื่องซักผ้า</p>
-    <a href="https://line.me" class="btn-line">แอดไลน์เพื่อสอบถามและสั่งซื้อ</a>
+
+  <!-- แจ้งเตือน -->
+  <div class="notification" id="notification">
+    <p>สิ่งที่ลูกค้าต้องเตรียมคือไลน์เพื่อสั่งซื้อโดยตรงกับพนักงานขาย กรุณาพูดแนะนำตัวก่อนตามปกติ</p>
+    <button onclick="closeNotification()">ปิด</button>
+  </div>
+
+  <!-- หัวเว็บไซต์ -->
+  <header class="site-header">
+    <h1>สยามชัย ปทุมธานี2 บายน้องหมิง</h1>
+    <p class="slogan">ผ่อนง่ายราคาสบาย นานสุด 12 เดือน เพียงแค่บัตรประชาชนใบเดียว บางสินค้าเช่นแอร์อาจใช้ทะเบียนบ้าน</p>
   </header>
 
-  <!-- เมนูนำทาง -->
-  <nav>
-    <ul>
-      <li><a href="#tv">ทีวี</a></li>
-      <li><a href="#fridge">ตู้เย็น</a></li>
-      <li><a href="#washer">เครื่องซักผ้า</a></li>
-      <li><a href="#air">แอร์</a></li>
-      <li><a href="#howto">วิธีใช้งาน</a></li>
-    </ul>
-  </nav>
-
-  <!-- ส่วนโปรโมชั่น -->
-  <section class="promo">
-    <div class="container">
-      <h2>สินค้าแนะนำพิเศษประจำเดือน</h2>
-      <p>เลือกชมสินค้าราคาพิเศษจากแบรนด์ดัง</p>
-      <a href="https://line.me" class="btn-line">แอดไลน์เพื่อดูโปรโมชั่น</a>
-    </div>
-  </section>
-
-  <!-- โซนสินค้า: แอร์ -->
-  <section id="air" class="product-section">
-    <div class="container">
-      <h2>แอร์ <a href="#" class="see-all">ดูทั้งหมด</a></h2>
-      <div class="product-row">
-        <!-- แสดงแอร์ 8 ตัว -->
-        <!-- สินค้าแต่ละชิ้นแสดงเป็นการ์ดแนวนอน -->
-        <div class="product-card horizontal">
-          <img src="images/air1.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Daikin รุ่น A1</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
+  <!-- โซนสินค้า -->
+  <main class="products">
+    <section class="category">
+      <h2>แอร์</h2>
+      <div class="product-grid">
+        <!-- ช่องสินค้า -->
+        <div class="product-card">
+          <h3>ชื่อสินค้า</h3>
+          <p>สาขา: </p>
+          <button>เพิ่มเติม</button>
         </div>
-        <div class="product-card horizontal">
-          <img src="images/air2.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Samsung รุ่น CoolPlus</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/air3.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Mitsubishi รุ่น MZ123</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/air4.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Hitachi รุ่น SmartAir</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <!-- เพิ่มอีก 4 ชิ้น -->
-        <div class="product-card horizontal">
-          <img src="images/air5.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Samsung รุ่น WindFree</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/air6.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Daikin รุ่น X1</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/air7.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Hitachi รุ่น ECO2</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/air8.jpg" alt="ภาพสินค้าแอร์" />
-          <div class="product-info">
-            <h3>Mitsubishi รุ่น MRX</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
+        <!-- ทำซ้ำอีก 3 ช่อง -->
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- โซนสินค้า: ทีวี -->
-  <section id="tv" class="product-section">
-    <div class="container">
+    <!-- หมวดอื่น ๆ ก็ใช้โครงสร้างเดียวกัน -->
+    <section class="category">
       <h2>ทีวี</h2>
-      <div class="product-row">
-        <div class="product-card horizontal">
-          <img src="images/tv1.jpg" alt="ภาพสินค้าทีวี" />
-          <div class="product-info">
-            <h3>Samsung รุ่น SmartView</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/tv2.jpg" alt="ภาพสินค้าทีวี" />
-          <div class="product-info">
-            <h3>Aconatic รุ่น LED24</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/tv3.jpg" alt="ภาพสินค้าทีวี" />
-          <div class="product-info">
-            <h3>Samsung รุ่น HD9000</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/tv4.jpg" alt="ภาพสินค้าทีวี" />
-          <div class="product-info">
-            <h3>Aconatic รุ่น CinemaX</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
+      <div class="product-grid">
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
+        <div class="product-card"><h3>ชื่อสินค้า</h3><p>สาขา:</p><button>เพิ่มเติม</button></div>
       </div>
-    </div>
-  </section>
+    </section>
+    
+    <!-- เพิ่มตู้เย็น และเครื่องซักผ้าแบบเดียวกัน -->
 
-  <!-- โซนสินค้า: เครื่องซักผ้า -->
-  <section id="washer" class="product-section">
-    <div class="container">
-      <h2>เครื่องซักผ้า</h2>
-      <div class="product-row">
-        <!-- ตัวอย่าง 6 เครื่อง -->
-        <div class="product-card horizontal">
-          <img src="images/washer1.jpg" alt="เครื่องซักผ้า" />
-          <div class="product-info">
-            <h3>Samsung รุ่น WashEasy</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/washer2.jpg" alt="เครื่องซักผ้า" />
-          <div class="product-info">
-            <h3>LG รุ่น PowerClean</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/washer3.jpg" alt="เครื่องซักผ้า" />
-          <div class="product-info">
-            <h3>Toshiba รุ่น EcoWash</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/washer4.jpg" alt="เครื่องซักผ้า" />
-          <div class="product-info">
-            <h3>Samsung รุ่น BubbleX</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/washer5.jpg" alt="เครื่องซักผ้า" />
-          <div class="product-info">
-            <h3>Panasonic รุ่น CleanMagic</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/washer6.jpg" alt="เครื่องซักผ้า" />
-          <div class="product-info">
-            <h3>Hitachi รุ่น QuickSpin</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- โซนสินค้า: ตู้เย็น -->
-  <section id="fridge" class="product-section">
-    <div class="container">
-      <h2>ตู้เย็น</h2>
-      <div class="product-row">
-        <div class="product-card horizontal">
-          <img src="images/fridge1.jpg" alt="ตู้เย็น" />
-          <div class="product-info">
-            <h3>Samsung รุ่น CoolBox</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/fridge2.jpg" alt="ตู้เย็น" />
-          <div class="product-info">
-            <h3>Hitachi รุ่น TwinCool</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/fridge3.jpg" alt="ตู้เย็น" />
-          <div class="product-info">
-            <h3>Panasonic รุ่น FreshTech</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/fridge4.jpg" alt="ตู้เย็น" />
-          <div class="product-info">
-            <h3>Mitsubishi รุ่น MR-FRZ</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/fridge5.jpg" alt="ตู้เย็น" />
-          <div class="product-info">
-            <h3>Toshiba รุ่น ChillZone</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <div class="product-card horizontal">
-          <img src="images/fridge6.jpg" alt="ตู้เย็น" />
-          <div class="product-info">
-            <h3>LG รุ่น CoolBright</h3>
-            <p>ราคาพิเศษ</p>
-            <a href="#" class="btn-detail">ดูรายละเอียด</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- วิธีใช้งาน -->
-  <section id="howto" class="howto">
-    <div class="container">
-      <h2>วิธีการใช้งานเว็บไซต์</h2>
-      <p>เลือกหมวดสินค้าแล้วแอดไลน์เพื่อสอบถามและสั่งซื้อ</p>
-    </div>
-  </section>
-
-  <!-- ส่วนท้าย -->
-  <footer>
-    <p>© 2025 สยามชัย. สงวนลิขสิทธิ์.</p>
-  </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
